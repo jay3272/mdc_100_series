@@ -23,8 +23,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: Return an AsymmetricView (104)
     // TODO: Pass Category variable to AsymmetricView (104)
-    return const Scaffold(
+    return Scaffold(
       // TODO: Add app bar (102)
+      appBar: AppBar(
+    // TODO: Add buttons and title (102)
+     title: const Text('神社'),
+    // TODO: Add trailing buttons (102)
+      ),
       // TODO: Add a grid view (102)
       body: Center(
         child: Text('You did it!'),
