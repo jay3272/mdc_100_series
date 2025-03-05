@@ -89,6 +89,7 @@ class _LoginPageState extends State<LoginPage> {
               child: const Text('NEXT'),
               onPressed: () {
             // TODO: Show the next page (101) 
+                Navigator.pop(context);
               },
             ),
           ],
