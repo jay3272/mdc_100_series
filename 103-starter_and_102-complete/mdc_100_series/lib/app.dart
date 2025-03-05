@@ -59,6 +59,9 @@ ThemeData _buildShrineTheme() {
       selectionColor: kShrinePink100,
     ),
     // TODO: Decorate the inputs (103)
+    inputDecorationTheme: const InputDecorationTheme(
+      border: OutlineInputBorder(),
+    ),
   );
 }
 // TODO: Build a Shrine Text Theme (103)
