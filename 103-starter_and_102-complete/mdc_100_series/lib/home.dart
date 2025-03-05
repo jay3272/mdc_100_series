@@ -53,20 +53,23 @@ class HomePage extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
                 child: Column(
                   // TODO: Align labels to the bottom and center (103)
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   // TODO: Change innermost Column (103)
                   children: <Widget>[
                     // TODO: Handle overflowing labels (103)
-                    Text(
-                      product.name,
-                      style: theme.textTheme.titleLarge,
-                      maxLines: 1,
-                    ),
-                    const SizedBox(height: 8.0),
-                    Text(
-                      formatter.format(product.price),
-                      style: theme.textTheme.titleSmall,
-                    ),
+                      Text(
+                        product.name,
+                        style: theme.textTheme.labelLarge,
+                        softWrap: false,
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 1,
+                      ),
+                      const SizedBox(height: 4.0),
+                      Text(
+                        formatter.format(product.price),
+                        style: theme.textTheme.bodySmall,
+                      ),
                   ],
                 ),
               ),
