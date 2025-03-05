@@ -38,6 +38,26 @@ class HomePage extends StatelessWidget {
         },
       ),
     // TODO: Add trailing buttons (102)
+          actions: <Widget>[
+        IconButton(
+          icon: const Icon(
+            Icons.search,
+            semanticLabel: 'search',
+          ),
+          onPressed: () {
+            print('Search button');
+          },
+        ),
+        IconButton(
+          icon: const Icon(
+            Icons.tune,
+            semanticLabel: 'filter',
+          ),
+          onPressed: () {
+            print('Filter button');
+          },
+        ),
+      ],
       ),
       // TODO: Add a grid view (102)
       body: Center(
